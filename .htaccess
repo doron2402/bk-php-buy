@@ -1,0 +1,5 @@
+AddHandler application/x-httpd-php5 .html .htm
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^buy10.co.il$ [NC]
+RewriteRule ^(.*)$ http://www.buy10.co.il/$1 [L,R=301]
